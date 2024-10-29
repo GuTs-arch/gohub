@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+
+/* typography */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
+
+
+body {
+    font-family:  'open sans';
+    overflow-x: hidden;
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: lighter;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 13px;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: lighter;
+    line-height: normal;
+}
+
+h2 {
+    color: #353535;
+    font-size: 2em;
+}
+
+p {
+    color: #757575;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+section {
+    position: relative;
+    padding: 100px 0;
+}
+
+@media (max-width: 767px){
+    .card-body h1{
+        font-size: 2em;
+    }
+}
+/* nav start */
+
+
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: .5s;
+}
+
+.navbar-nav {
+    gap: 1.5rem;
+}
+
+.navbar .navbar-nav {
+    gap: 2rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: lightslategray;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.main-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(111, 66, 193);
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.075) 0px 1px 1px;
+    border-color: rgb(111, 66, 193);
+    padding: 0.8rem 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+    transition: .3s ease-in-out, ;
+}
+
+.main-btn:hover {
+    background-color: rgb(82, 47, 143);
+}
+
+nav.sticky {
+    padding: 5px 100px;
+    background-color: rgb(245, 242, 252);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* nav-end */
+
+/* home */
+.hero-1 {
+    background-image: url(img/illustration/2.png);
+    background-position: left top;
+    background-size: contain;
+}
+
+.bg-holder {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0px;
+    left: 0px;
+    will-change: transform, opacity, filter;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding-top: 57rem;
+    overflow: hidden;
+}
+
+.hero-2{
+    background-image: url(img/illustration/1.png);
+    background-position: right top;
+    background-size: contain;
+}
+
+.info{
+    position: relative;
+    margin-top: 150px;
+}
+
+#tours{
+    margin-top: 250px;
+}
+
+.card-body{
+    text-align: justify;
+}
+
+.product-shadow-card{
+    border: 0;
+    background: #ffffff;
+    box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+}
+
+.card-body span{
+    background-color: rgb(111, 66, 193);
+    padding: 10px 10px 10px 20px;
+    color: white;
+}
+
+.priority-test{
+    margin-top: 80px;
+}
+
+.hero-3{
+    background-image: url(img/illustration/6.png);
+    background-position: right top;
+    background-size: contain;
+}
+
+.bg-holder-2{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0px;
+    left: 0px;
+    will-change: transform, opacity, filter;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.contact{
+    margin-top: 70px;
+    background: #f0f0f0;
+}
+
+footer{
+    background-color: rgb(33, 34, 64);
+}
+
+.footer-link{
+    color: rgb(148, 148, 148);
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}
+
+.social-links a{
+    text-decoration: none;
+    font-size: 15px;
+}
